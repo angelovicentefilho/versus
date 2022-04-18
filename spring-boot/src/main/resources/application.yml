@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: springboot
+  datasource:
+    username: sa
+    password: ''
+    url: jdbc:h2:mem:devDb;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
